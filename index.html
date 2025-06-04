@@ -3,61 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Awesome Portfolio</title>
+    <title>Modern Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-dS1pk2Rr5dpMlUeJ8jrW6vTmPFDZzJSchTtKj9UbWQsuPhxOrWSgHsVPiCKPsi+p+16sNDe5f2a8b/vwtE9dDQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header class="header">
-        <h1><i class="fa-solid fa-rocket"></i> My Awesome Portfolio</h1>
-        <nav>
-            <ul class="nav-list">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1 class="logo"><i class="fa-solid fa-code"></i> My Portfolio</h1>
+            <nav class="navbar">
+                <ul class="nav-list">
+                    <li><a href="#about"><i class="fa-solid fa-user"></i> About</a></li>
+                    <li><a href="#skills"><i class="fa-solid fa-laptop-code"></i> Skills</a></li>
+                    <li><a href="#projects"><i class="fa-solid fa-layer-group"></i> Projects</a></li>
+                    <li><a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+                </ul>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+            </nav>
+        </div>
     </header>
 
-    <section id="about" class="hero">
-        <h2>Hi, I'm a Web Developer</h2>
-        <p>I create modern and responsive websites using <strong>HTML</strong>, <strong>CSS</strong> and <strong>JavaScript</strong>.</p>
-        <button id="theme-toggle" class="theme-toggle"><i class="fa-solid fa-moon"></i> Toggle Dark Mode</button>
-    </section>
-
-    <section id="skills" class="skills">
-        <h2>Skills</h2>
-        <div class="skill-icons">
-            <i class="fa-brands fa-html5" title="HTML5"></i>
-            <i class="fa-brands fa-css3-alt" title="CSS3"></i>
-            <i class="fa-brands fa-js" title="JavaScript"></i>
-            <i class="fa-brands fa-git-alt" title="Git"></i>
+    <section id="about" class="hero fade">
+        <div class="container">
+            <h2>Hi, I'm a Web Developer</h2>
+            <p>I craft responsive, modern websites with <strong>HTML</strong>, <strong>CSS</strong> and <strong>JavaScript</strong>.</p>
+            <a href="#projects" class="cta"><i class="fa-solid fa-arrow-down"></i> View My Work</a>
         </div>
     </section>
 
-    <section id="projects" class="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <i class="fa-solid fa-laptop-code project-icon"></i>
-            <h3>Project One</h3>
-            <p>A short description of my first awesome project. It showcases modern web design techniques.</p>
-        </div>
-        <div class="project">
-            <i class="fa-solid fa-mobile-screen-button project-icon"></i>
-            <h3>Project Two</h3>
-            <p>An example of a mobile-first web application with a responsive layout.</p>
+    <section id="skills" class="skills fade">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skill-icons">
+                <i class="fa-brands fa-html5" title="HTML5"></i>
+                <i class="fa-brands fa-css3-alt" title="CSS3"></i>
+                <i class="fa-brands fa-js" title="JavaScript"></i>
+                <i class="fa-brands fa-git-alt" title="Git"></i>
+            </div>
         </div>
     </section>
 
-    <section id="contact" class="contact">
-        <h2>Contact</h2>
-        <p><i class="fa-solid fa-envelope"></i> email@example.com</p>
-        <p><i class="fa-solid fa-phone"></i> +1234567890</p>
+    <section id="projects" class="projects fade">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <i class="fa-solid fa-laptop-code project-icon"></i>
+                <h3>Project One</h3>
+                <p>A modern landing page with smooth animations.</p>
+            </div>
+            <div class="project">
+                <i class="fa-solid fa-mobile-screen-button project-icon"></i>
+                <h3>Project Two</h3>
+                <p>A mobile-first web app with intuitive UI.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact fade">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <p><i class="fa-solid fa-envelope"></i> email@example.com</p>
+            <p><i class="fa-solid fa-phone"></i> +1234567890</p>
+        </div>
     </section>
 
     <footer class="footer">
-        <p>&copy; 2023 Awesome Portfolio</p>
+        <div class="container">
+            <p>&copy; 2025 Modern Portfolio</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>

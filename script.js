@@ -6,11 +6,21 @@ if (themeToggle) {
         body.classList.toggle('dark-mode');
         const icon = themeToggle.querySelector('i');
         if (body.classList.contains('dark-mode')) {
-            icon.classList.remove('fa-moon');
-            icon.classList.add('fa-sun');
+            icon.classList.replace('fa-moon', 'fa-sun');
         } else {
-            icon.classList.remove('fa-sun');
-            icon.classList.add('fa-moon');
+            icon.classList.replace('fa-sun', 'fa-moon');
         }
     });
 }
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
+    });
+}, {
+    threshold: 0.1
+});
+
+document.querySelectorAll('.fade').forEach(el => observer.observe(el));
