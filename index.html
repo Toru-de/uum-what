@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sleek Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-dS1pk2Rr5dpMlUeJ8jrW6vTmPFDZzJSchTtKj9UbWQsuPhxOrWSgHsVPiCKPsi+p+16sNDe5f2a8b/vwtE9dDQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo"><i class="fa-solid fa-code"></i> Awesome Dev</h1>
+            <nav class="navbar">
+                <ul class="nav-list">
+                    <li><a href="#home"><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li><a href="#about"><i class="fa-solid fa-user"></i> About</a></li>
+                    <li><a href="#skills"><i class="fa-solid fa-bolt"></i> Skills</a></li>
+                    <li><a href="#projects"><i class="fa-solid fa-layer-group"></i> Projects</a></li>
+                    <li><a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+                </ul>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero fade">
+        <div class="container">
+            <h2>Crafting Modern Web Experiences</h2>
+            <p>Hi! I'm Alex, a passionate front-end developer.</p>
+            <a href="#projects" class="cta"><i class="fa-solid fa-arrow-right"></i> See Projects</a>
+        </div>
+    </section>
+
+    <section id="about" class="about fade">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I build responsive websites with clean, accessible code. My focus is delivering smooth interactions and striking visuals.</p>
+        </div>
+    </section>
+
+    <section id="skills" class="skills fade">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skill-icons">
+                <i class="fa-brands fa-html5" title="HTML5"></i>
+                <i class="fa-brands fa-css3-alt" title="CSS3"></i>
+                <i class="fa-brands fa-js" title="JavaScript"></i>
+                <i class="fa-brands fa-react" title="React"></i>
+                <i class="fa-brands fa-node" title="Node.js"></i>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects fade">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <article class="project-card fade">
+                    <i class="fa-solid fa-chart-line project-icon"></i>
+                    <h3>Analytics Dashboard</h3>
+                    <p>Interactive dashboard built with modern JS frameworks.</p>
+                </article>
+                <article class="project-card fade">
+                    <i class="fa-solid fa-mobile-screen-button project-icon"></i>
+                    <h3>Mobile App Site</h3>
+                    <p>Responsive landing page for a cross-platform app.</p>
+                </article>
+                <article class="project-card fade">
+                    <i class="fa-solid fa-store project-icon"></i>
+                    <h3>E-commerce Template</h3>
+                    <p>Smooth shopping experience with dynamic cart.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact fade">
+        <div class="container">
+            <h2>Contact</h2>
+            <p><i class="fa-solid fa-paper-plane"></i> alex@example.com</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Awesome Dev</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
